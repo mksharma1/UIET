@@ -10,10 +10,16 @@
             android:icon="@drawable/home"
             android:title="Home" />
         <item
+            android:id="@+id/atglance"
+            android:icon="?android:attr/actionModeSplitBackground"
+            android:title="UIET At Glance" />
+        <item
             android:id="@+id/panel"
+            android:icon="@drawable/ic_label_black_24dp"
             android:title="ERP Panel" />
         <item
             android:id="@+id/news"
+            android:icon="@drawable/ic_assignment_black_24dp"
             android:title="News" />
         <item
             android:id="@+id/gallery"
@@ -21,24 +27,29 @@
             android:title="Gallery" />
         <item
             android:id="@+id/fee"
+            android:icon="@drawable/ic_payment_black_24dp"
             android:title="Online Fee Payment" />
         <item
             android:id="@+id/calendar"
+            android:icon="@drawable/ic_event_black_24dp"
             android:title="Academic Calendar" />
         <item
             android:id="@+id/admission."
+            android:icon="@drawable/ic_layers_black_24dp"
             android:title="Admissions" />
         <item
             android:id="@+id/downloads"
+            android:icon="@drawable/ic_file_download_black_24dp"
             android:title="Downloads" />
     </group>
 
     <item android:title="Communicate">
         <menu>
 
+
             <item
                 android:id="@+id/contact"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@android:drawable/stat_sys_phone_call"
                 android:title="Contact Us" />
             <item
                 android:id="@+id/about"

@@ -3,17 +3,15 @@ package com.dsc.uiet;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.webkit.WebResourceRequest;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -131,8 +129,25 @@ public class MainActivity extends AppCompatActivity
             myWebView.setWebViewClient(new myWebViewClient());
             myWebView.loadUrl("http://www.uietkuk.org/downloads.php");
         }
+        else if(id==R.id.atglance)
+        {           Intent j = new Intent(this,atglance.class);
+            startActivity(j);
+        }
+
+        else if(id==R.id.contact)
+        {           Intent k = new Intent(this,contact_us.class);
+            startActivity(k);
+        }
+
+        else if(id==R.id.about)
+        {           Intent l = new Intent(this,About_us.class);
+            startActivity(l);
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }
+
+

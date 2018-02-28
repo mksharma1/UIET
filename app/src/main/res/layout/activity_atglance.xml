@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:text="UIET At Glance"
+        android:textSize="30dp"
+
+        android:id="@+id/abc"/>
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+
+
+        <TextView
+            android:id="@+id/TEXT_STATUS_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textSize="18dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:text="\nMission:- \nThe primary mission of the institute continues to be execution of basic and applied research that advances the state of the profession, the education of the next generation of academic and industry leaders, and the preparation of students for successful careers in professional practice. \n    To advance its ultimate mission of building the character and careers of students, the institute focuses its efforts on three goals: student achievement and success, institutional excellence, and community service. These interrelated ends are facilitated by the high quality faculty, students, programs and facilities.\n\nGeneral Information:- \nUniversity Institute of Engineering and Technology (UIET) was established by Kurukshetra University in 2004 to be developed as a 'Centre of Excellence' in order to offer quality technical education and to undertake research in Engineering and Technology. \n    Presently, the institute is offering four B. Tech and eight M. Tech and three Ph. D. degree programs in the technically important disciplines. In B. Tech Degree the institute is having course of Electronics and Communication Engineering, Computer Science Engineering, Mechanical Engineering and Biotechnology Engg. In M. Tech. Degree the institute is having course of Electronics and Communication Engineering, Computer Engineering, Software Engineering, Biotechnology, Thermal Engineering, Industrial and Production Engineering, Electrical Engineering and Material Science and Technology. The institute is also offering Ph.D. programs in three engineering disciplines i.e. \nElectronics and Communication Engineering, Computer Science engineering and BioTechnology Engineering.    \nThe institute is also serving as a nodal agency for the matters of academic importance like, development of scheme of examination, syllabus, academic plan and maintenance of standards in affiliated Engineering colleges and is headed by:-\nDirector \nProf.C.C. Tripathi"
+            android:layout_weight="1.0"/>
+    </ScrollView>
+</LinearLayout>
