@@ -98,4 +98,5 @@
     </string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="title_activity_splashscreen">splashscreen</string>
+    <string name="title_activity_home">home</string>
 </resources>

@@ -1,12 +1,12 @@
 package com.dsc.uiet;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatImageButton;
 import android.view.View;
-import android.widget.Button;
 
 public class contact_us extends AppCompatActivity {
 
@@ -32,4 +32,23 @@ public class contact_us extends AppCompatActivity {
 
             }
                     });
-}}
+        AppCompatImageButton button1 = findViewById(R.id.imageButton1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view2)
+            {
+
+                Uri uri = Uri.parse("http://instagram.com/uietkurukshetra/");
+                Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
+
+                likeIng.setPackage("com.instagram.android");
+
+                try {
+                    startActivity(likeIng);
+                } catch (ActivityNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://instagram.com/uietkurukshetra/")));
+                }
+            }
+
+        });}}

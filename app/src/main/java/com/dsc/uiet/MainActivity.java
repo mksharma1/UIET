@@ -81,9 +81,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.home) {
-            WebView myWebView = (WebView) findViewById(R.id.webview);
-            myWebView.setWebViewClient(new myWebViewClient());
-            myWebView.loadUrl("http://www.uietkuk.org");
+            Intent m = new Intent(this,home.class);
+
+            startActivity(m);
+
+
         }
         else if(id==R.id.panel)
         {

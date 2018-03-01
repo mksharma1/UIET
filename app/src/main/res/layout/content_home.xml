@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootRL"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uietkuk"
+
+    android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="160dp"
+            android:layout_weight=".6"
+            android:adjustViewBounds="true"
+            android:background="@android:color/background_light"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ag" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="160dp"
+            android:layout_weight=".4"
+            android:adjustViewBounds="true"
+            android:background="@android:color/background_light"
+            android:scaleType="fitXY"
+
+            android:src="@drawable/co" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="300dp"
+            android:layout_weight=".4"
+            android:adjustViewBounds="true"
+            android:background="@android:color/background_light"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/lac" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="300dp"
+            android:layout_weight=".6"
+            android:adjustViewBounds="true"
+            android:background="@android:color/background_light"
+            android:scaleType="fitXY"
+            android:src="@drawable/an" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="425dp"
+            android:layout_weight=".6"
+            android:adjustViewBounds="true"
+            android:background="@android:color/background_light"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/tnp" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="425dp"
+            android:layout_weight=".4"
+            android:adjustViewBounds="true"
+            android:background="@android:color/background_light"
+            android:scaleType="fitXY"
+            android:src="@drawable/rfs" />
+
+    </LinearLayout>
+
+</RelativeLayout>

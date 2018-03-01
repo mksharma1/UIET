@@ -7,9 +7,9 @@
     android:layout_height="fill_parent"
     android:background="@drawable/background">
 
-    <android.support.v7.widget.AppCompatTextView
+<android.support.v7.widget.AppCompatTextView
         android:id="@+id/appCompatTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="9dp"
         android:text="University Institute Of Engineering"
@@ -18,7 +18,7 @@
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/appCompatTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
         android:layout_marginLeft="84dp"
@@ -28,7 +28,7 @@
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/appCompatTextView2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
         android:layout_marginTop="60dp"
@@ -39,7 +39,7 @@
         android:textSize="11sp" />
 
     <android.support.v7.widget.AppCompatTextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="48dp"
         android:layout_below="@id/appCompatTextView2"
@@ -52,7 +52,7 @@
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/appCompatTextView4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
         android:layout_below="@id/appCompatTextView3"
@@ -62,7 +62,7 @@
         android:textSize="18sp" />
 
     <android.support.v7.widget.AppCompatTextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@id/appCompatTextView"
         android:layout_marginLeft="8dp"
@@ -77,7 +77,7 @@
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/address1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/appCompatTextView"
         android:layout_marginLeft="78dp"
@@ -89,18 +89,48 @@
     <ImageButton
         android:id="@+id/imageButton"
         style="@android:style/Widget.DeviceDefault.ImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
+        android:layout_width="323px"
+        android:layout_height="100px"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
         android:adjustViewBounds="true"
         android:background="?attr/actionModeSplitBackground"
         android:cropToPadding="false"
         android:scaleType="centerCrop"
         android:visibility="visible"
-        app:srcCompat="@drawable/th" />
+        app:srcCompat="@drawable/wr" />
 
+    <ImageButton
+        android:id="@+id/imageButton2"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="120px"
+        android:layout_height="100px"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/imageButton1"
+        android:layout_toRightOf="@+id/imageButton1"
+        android:adjustViewBounds="true"
+        android:background="?attr/actionModeSplitBackground"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:srcCompat="@drawable/gmail" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="323px"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:background="?attr/actionModeSplitBackground"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:srcCompat="@drawable/instagram_logo" />
 
 </RelativeLayout>
