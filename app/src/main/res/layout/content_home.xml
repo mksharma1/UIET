@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rootRL"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -8,9 +9,11 @@
 <ImageView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
     android:src="@drawable/uietkuk"
 
-    android:layout_alignParentLeft="true"/>
+    android:layout_alignParentLeft="true"
+    android:id="@+id/imageView2" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,9 +25,9 @@
             android:id="@+id/imageButton"
             style="@style/Widget.AppCompat.ImageButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="200dp"
             android:layout_weight=".6"
             android:adjustViewBounds="true"
             android:background="@android:color/background_light"
@@ -35,9 +38,9 @@
         <ImageButton
             android:id="@+id/imageButton1"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="200dp"
             android:layout_weight=".4"
             android:adjustViewBounds="true"
             android:background="@android:color/background_light"
@@ -58,7 +61,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="300dp"
+            android:layout_marginTop="307dp"
             android:layout_weight=".4"
             android:adjustViewBounds="true"
             android:background="@android:color/background_light"
@@ -71,28 +74,27 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="300dp"
+            android:layout_marginTop="307dp"
             android:layout_weight=".6"
             android:adjustViewBounds="true"
             android:background="@android:color/background_light"
             android:scaleType="fitXY"
             android:src="@drawable/an" />
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:id="@+id/linearLayout">
+        android:weightSum="1">
 
         <ImageButton
             android:id="@+id/imageButton4"
-            style="@style/Widget.AppCompat.ImageButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="425dp"
+            android:layout_marginTop="414dp"
             android:layout_weight=".6"
-            android:adjustViewBounds="true"
             android:background="@android:color/background_light"
             android:cropToPadding="false"
             android:scaleType="fitXY"
@@ -101,9 +103,9 @@
         <ImageButton
             android:id="@+id/imageButton5"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="425dp"
+            android:layout_marginTop="414dp"
             android:layout_weight=".4"
             android:adjustViewBounds="true"
             android:background="@android:color/background_light"
@@ -112,4 +114,20 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_weight="1"
+        android:layout_marginTop="520dp"
+        android:background="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/cu" />
+    </LinearLayout>
 </RelativeLayout>

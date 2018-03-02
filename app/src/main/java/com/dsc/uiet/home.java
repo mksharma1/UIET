@@ -1,6 +1,5 @@
 package com.dsc.uiet;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -26,7 +25,6 @@ public class home extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final Context context = this;
 
         ImageButton imageButton = (ImageButton) findViewById(R.id.imageButton);
 
@@ -35,8 +33,22 @@ public class home extends AppCompatActivity
             @Override
             public void onClick(View v) {
 
-                Intent a = new Intent(context, atglance.class);
+                Intent a = new Intent(home.this, atglance.class);
                 startActivity(a);
+
+            }
+
+        });
+
+
+        ImageButton imageButton1 =  findViewById(R.id.imageButton1);
+
+        imageButton1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v1) {
+                Intent b = new Intent(home.this, CoursesActivity.class);
+                startActivity(b);
 
             }
 
